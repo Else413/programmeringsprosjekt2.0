@@ -24,5 +24,7 @@ public class DayMain {
          Remember to also to check that you get the expected results
          */
 
+        DailyPower.printPowerPrices(powerusage_day);
+
     }
 }
