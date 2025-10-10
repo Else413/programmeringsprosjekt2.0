@@ -24,7 +24,9 @@ public class DayMain {
          Remember to also to check that you get the expected results
          */
 
-        DailyPower.printPowerPrices(powerusage_day);
+        DailyPower.printPowerPrices(powerprices_day);
+        System.out.println(); 
+        DailyPower.printPowerUsage(powerusage_day);
 
     }
 }
