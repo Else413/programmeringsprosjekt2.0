@@ -49,11 +49,14 @@ public class DailyPower {
     private static final double THRESHOLD = 0.9375;
     private static final double PERCENTAGE = 0.9;
 
-    private static double getSupport(double usage, double price) {
+    public static double getSupport(double usage, double price) {
 
         double support = 0;
 
-        // TODO
+        if( price > THRESHOLD) {
+            double overGrensen = price - THRESHOLD;
+            support = overGrensen * usage * PERCENTAGE;
+        }
 
         return support;
     }

@@ -37,8 +37,12 @@ public class DayMain {
         System.out.println("Total strømforbruk for en dag: " + sum);
 
         // d)
-        double spotpris = DailyPower.computeSpotPrice(powerusage_day, powerprices_day );
+        double spotpris = DailyPower.computeSpotPrice(powerusage_day, powerprices_day);
         System.out.println("Strømpris med spotpris " + spotpris);
+
+        // e)
+        double stromstotte = DailyPower.getSupport(23.53, 500);
+        System.out.println("Strømstøtte " + stromstotte);
 
     }
 }
