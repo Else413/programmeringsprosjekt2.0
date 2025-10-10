@@ -24,9 +24,17 @@ public class DayMain {
          Remember to also to check that you get the expected results
          */
 
+        // a)
         DailyPower.printPowerPrices(powerprices_day);
-        System.out.println(); 
+        System.out.println();
+
+        // b)
         DailyPower.printPowerUsage(powerusage_day);
+        System.out.println();
+
+        // c)
+        double sum = DailyPower.computePowerUsage(powerusage_day);
+        System.out.println("Total strømforbruk for en dag: " + sum);
 
     }
 }
