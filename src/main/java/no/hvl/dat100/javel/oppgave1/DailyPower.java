@@ -36,7 +36,11 @@ public class DailyPower {
 
         double price = 0;
 
-        // TODO
+        for (double i : usage) {
+            for (double j : prices ) {
+                price += i * j;
+            }
+        }
 
         return price;
     }
