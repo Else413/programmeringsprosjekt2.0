@@ -87,12 +87,14 @@ public class DailyPower {
 
         double price = 0;
 
-        // TODO
+        for (int i = 0; i < usage.length; i++) {
+            price += usage[i] * 0.5;
+        }
 
-        return price;
+            return price;
     }
 
-    // g) compute peak usage during a single day
+    // h) compute peak usage during a single day
     public static double findPeakUsage(double[] usage) {
 
         double temp_max = 0;
@@ -102,6 +104,7 @@ public class DailyPower {
         return temp_max;
     }
 
+   //i
     public static double findAvgPower(double[] usage) {
 
         double average = 0;

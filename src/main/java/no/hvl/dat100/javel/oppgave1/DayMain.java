@@ -47,5 +47,12 @@ public class DayMain {
         //f)
         double powerSupport = DailyPower.computePowerSupport(powerusage_day, powerprices_day);
         System.out.println("Strømstøtte for gitt dag: " + powerSupport);
+
+        //g
+        double norgesPris = DailyPower.computeNorgesPrice((powerusage_day));
+        System.out.println("Pris med Norgesstøtte " + norgesPris );
+
+        //h
+
     }
 }
