@@ -48,12 +48,17 @@ public class DayMain {
         double powerSupport = DailyPower.computePowerSupport(powerusage_day, powerprices_day);
         System.out.println("Strømstøtte for gitt dag: " + powerSupport);
 
-        //g
+        // g)
         double norgesPris = DailyPower.computeNorgesPrice((powerusage_day));
         System.out.println("Pris med Norgesstøtte " + norgesPris );
 
-        //h
+        // h)
         double peakUsage = DailyPower.findPeakUsage(powerusage_day);
         System.out.println("Største forbruk på én time " + peakUsage + "kWh");
+
+        // i)
+        double gjennomsnitt = DailyPower.findAvgPower(powerusage_day);
+        System.out.println("Gjennomsnittforbruk i timen: " + gjennomsnitt + " kWh");
+
     }
 }

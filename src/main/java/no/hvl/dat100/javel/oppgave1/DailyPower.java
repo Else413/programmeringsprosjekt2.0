@@ -116,7 +116,9 @@ public class DailyPower {
 
         double average = 0;
 
-        // TODO
+        for (int i = 0; i < usage.length; i++){
+        average += usage[i] / usage.length;
+        }
 
         return average;
     }
