@@ -65,15 +65,24 @@ public class DailyPower {
     public static double computePowerSupport(double[] usage, double[] prices) {
 
         double support = 0;
+        double price = 0;
+        int hour = 0; // viser hvilke time vi er på
 
-        // TODO
+        for (double i : usage) {
+            double j = prices[hour];
 
+            if (j > THRESHOLD) {
+                double overGrensen = j - THRESHOLD;
+                support += overGrensen * i * PERCENTAGE;
+            }
+            hour++;
+        }
         return support;
     }
 
-    private static final double NORGESPRIS_KWH = 0.5;
 
     // g) compute norges pris for a single day
+    private static final double NORGESPRIS_KWH = 0.5;
     public static double computeNorgesPrice(double[] usage) {
 
         double price = 0;

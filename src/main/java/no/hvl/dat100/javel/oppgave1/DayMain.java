@@ -44,5 +44,8 @@ public class DayMain {
         double stromstotte = DailyPower.getSupport(23.53, 500);
         System.out.println("Strømstøtte " + stromstotte);
 
+        //f)
+        double powerSupport = DailyPower.computePowerSupport(powerusage_day, powerprices_day);
+        System.out.println("Strømstøtte for gitt dag: " + powerSupport);
     }
 }
