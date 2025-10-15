@@ -53,6 +53,7 @@ public class DayMain {
         System.out.println("Pris med Norgesstøtte " + norgesPris );
 
         //h
-
+        double peakUsage = DailyPower.findPeakUsage(powerusage_day);
+        System.out.println("Største forbruk på én time " + peakUsage + "kWh");
     }
 }

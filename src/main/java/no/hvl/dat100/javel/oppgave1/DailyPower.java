@@ -99,7 +99,14 @@ public class DailyPower {
 
         double temp_max = 0;
 
-        // TODO
+        for (int i = 0; i < usage.length; i++){
+            if (usage[i]> temp_max){
+                temp_max = usage[i];
+
+            }
+
+        }
+
 
         return temp_max;
     }
