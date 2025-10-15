@@ -25,5 +25,9 @@ public class MonthMain {
          Remember to also to check that you get the expected results
          */
 
+        // a)
+        MonthlyPower.print_PowerUsage(power_usage_month);
+        System.out.println();
+
     }
 }

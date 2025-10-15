@@ -7,7 +7,11 @@ public class MonthlyPower {
     // a) print power usage for a month
     public static void print_PowerUsage(double[][] usage) {
 
-        // TODO
+        for(int i = 0; i < usage.length; i++) {
+            for (int j = 0; j < usage[i].length; j++) {
+                System.out.printf("%.2f kWh " , usage[i][j]);
+            }
+        }
 
     }
 
