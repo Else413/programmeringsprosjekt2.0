@@ -33,5 +33,9 @@ public class MonthMain {
         MonthlyPower.print_PowerPrices(power_prices_month);
         System.out.println();
 
+        //c
+       double powerUsage= MonthlyPower.computePowerUsage(power_usage_month);
+        System.out.println("" + powerUsage);
+
     }
 }
