@@ -36,10 +36,8 @@ public class DailyPower {
 
         double price = 0;
 
-        for (double i : usage) {
-            for (double j : prices ) {
-                price += i * j;
-            }
+        for (int i = 0; i < usage.length; i++) {
+            price += usage[i] * prices[i];
         }
 
         return price;

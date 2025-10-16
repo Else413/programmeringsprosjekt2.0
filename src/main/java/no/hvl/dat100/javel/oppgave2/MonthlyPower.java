@@ -7,7 +7,7 @@ public class MonthlyPower {
     // a) print power usage for a month
     public static void print_PowerUsage(double[][] usage) {
 
-        for(int i = 0; i < usage.length; i++) {
+        for (int i = 0; i < usage.length; i++) {
             for (int j = 0; j < usage[i].length; j++) {
                 System.out.printf("%.2f kWh " , usage[i][j]);
             }
@@ -18,7 +18,11 @@ public class MonthlyPower {
     // b) print power prices for a month
     public static void print_PowerPrices(double[][] prices) {
 
-        // TODO
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = 0; j < prices[i].length; j++) {
+                System.out.printf("%.2f kr " , prices[i][j]);
+            }
+        }
 
     }
 
