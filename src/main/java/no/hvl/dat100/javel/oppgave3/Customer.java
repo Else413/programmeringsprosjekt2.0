@@ -10,7 +10,11 @@ public class Customer {
 
     public Customer(String name, String email, int customer_id, PowerAgreementType agreement) {
 
-        // TODO
+        this.name = name;
+        this.email = email;
+        this.customer_id = customer_id;
+        this.agreement=agreement;
+        
     }
 
     // TODO - getter/setter methods for all objectvariables
