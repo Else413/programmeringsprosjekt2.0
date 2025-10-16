@@ -37,5 +37,9 @@ public class MonthMain {
        double powerUsage= MonthlyPower.computePowerUsage(power_usage_month);
         System.out.println("" + powerUsage);
 
+        // d)
+        boolean powerExceeded = MonthlyPower.exceedThreshold(power_usage_month, 5000);
+        System.out.println("Forbruksgrensen overskredet? " + powerExceeded);
+
     }
 }
