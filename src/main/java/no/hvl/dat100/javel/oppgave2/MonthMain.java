@@ -48,5 +48,9 @@ public class MonthMain {
         //f)
         double strømStøtte = MonthlyPower.computePowerSupport(power_usage_month, power_prices_month);
         System.out.println("Strømstøtten er: " + strømStøtte);
+
+        // g)
+        double norgesPris = MonthlyPower.computeNorgesPrice(power_usage_month);
+        System.out.println("Norgespris: " + norgesPris);
     }
 }

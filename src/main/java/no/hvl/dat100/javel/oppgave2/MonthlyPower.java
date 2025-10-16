@@ -98,11 +98,17 @@ public class MonthlyPower {
     }
 
     // g) Norgesprice for the month
+    private static final double NORGESPRIS_KWH = 0.5;
     public static double computeNorgesPrice(double[][] usage) {
 
         double price = 0;
 
-        // TODO
+        for (double[] i : usage) {
+            for (double j : i ) {
+                price += j * NORGESPRIS_KWH;
+            }
+
+        }
 
         return price;
     }
