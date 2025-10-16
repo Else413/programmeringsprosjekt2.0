@@ -12,7 +12,6 @@ public class MonthlyPower {
                 System.out.printf("%.2f kWh " , usage[i][j]);
             }
         }
-
     }
 
     // b) print power prices for a month
@@ -35,7 +34,6 @@ public class MonthlyPower {
             for (int j= 0; j<usage[i].length; j++){
                 sum += usage[i][j];
             }
-
             }
 
         return sum;
@@ -78,12 +76,24 @@ public class MonthlyPower {
     }
 
     // f) power support for the month
+    private static final double THRESHOLD = 0.9375;
+    private static final double PERCENTAGE = 0.9;
     public static double computePowerSupport(double[][] usage, double[][] prices) {
 
         double support = 0;
 
-        // TODO
 
+        for (int i = 0; i < usage.length; i++){
+            for (int j = 0; j < prices[i].length; j++){
+
+                double price = prices[i][j];
+
+                if (price > THRESHOLD){
+                    double overGrensen = price - THRESHOLD;
+                    support += overGrensen * usage[i][j] * PERCENTAGE;
+                }
+            }
+        }
         return support;
     }
 

@@ -44,5 +44,9 @@ public class MonthMain {
         //e)
         double spotPris = MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month);
         System.out.println("Spotpris er: " + spotPris);
+
+        //f)
+        double strømStøtte = MonthlyPower.computePowerSupport(power_usage_month, power_prices_month);
+        System.out.println("Strømstøtten er: " + strømStøtte);
     }
 }
