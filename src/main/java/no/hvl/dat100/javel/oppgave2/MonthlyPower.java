@@ -60,18 +60,20 @@ public class MonthlyPower {
             i++;
         }
 
-
-
         return exceeded;
     }
+
 
     // e) compute spot price
     public static double computeSpotPrice(double[][] usage, double[][] prices) {
 
         double price = 0;
 
-        // TODO
-
+        for (int i = 0; i < usage.length; i++){
+            for (int j = 0; j < prices[i].length; j++){
+                price += usage[i][j] * prices[i][j];
+            }
+        }
         return price;
     }
 

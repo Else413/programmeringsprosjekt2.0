@@ -41,5 +41,8 @@ public class MonthMain {
         boolean powerExceeded = MonthlyPower.exceedThreshold(power_usage_month, 5000);
         System.out.println("Forbruksgrensen overskredet? " + powerExceeded);
 
+        //e)
+        double spotPris = MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month);
+        System.out.println("Spotpris er: " + spotPris);
     }
 }
