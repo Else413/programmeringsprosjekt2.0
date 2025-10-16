@@ -53,7 +53,7 @@ public class Customer {
     // toString method
     @Override
     public String toString() {
-        return "Navn: " + name + "/n" + "Email: " + email + "/n" + "Customer ID: " + customer_id + "/n" + "Power agreement type: " + agreement;
+        return "Navn: " + name + "\n" + "Email: " + email + "\n" + "Customer ID: " + customer_id + "\n" + "Power agreement type: " + agreement;
     }
 
 }
