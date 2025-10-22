@@ -12,12 +12,7 @@ public class CustomersMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
 
-         Write code that uses and tests the methods implemented in the Customers class
-
-        */
 
     }
 }

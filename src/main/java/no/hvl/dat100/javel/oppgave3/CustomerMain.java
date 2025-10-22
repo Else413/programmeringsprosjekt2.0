@@ -14,7 +14,7 @@ public class CustomerMain {
         // Opprettet et nytt cutomer-objekt
 
         Customer nyKunde = new Customer("Lars", "123@gmail.com", 1234, PowerAgreementType.SPOTPRICE);
-        System.out.println(nyKunde); 
+        System.out.println(nyKunde);
 
 
     }

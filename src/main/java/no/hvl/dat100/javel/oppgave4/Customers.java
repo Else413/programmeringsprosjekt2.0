@@ -9,7 +9,7 @@ public class Customers {
     // a) Complete constructor
     public Customers(int size) {
 
-        // TODO
+        customers = new Customer[size];
 
     }
 
