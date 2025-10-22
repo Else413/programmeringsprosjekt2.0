@@ -53,7 +53,12 @@ public class Customers {
 
         boolean inserted = false;
 
-        // TODO
+        for (int i = 0; i < customers.length; i++) {
+            if (customers[i] == null) { // fant ledig plass
+                customers[i] = c; // sett inn objektet
+                inserted = true;
+            }
+        }
 
         return inserted;
     }
