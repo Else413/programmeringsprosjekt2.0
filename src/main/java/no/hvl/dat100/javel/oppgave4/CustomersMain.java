@@ -13,6 +13,11 @@ public class CustomersMain {
         System.out.println();
 
 
+        Customers nyKundeTabell = new Customers(5);
+
+        int antall = nyKundeTabell.countNonNull();
+        System.out.println("Antall kunder: " + antall);
+
 
     }
 }

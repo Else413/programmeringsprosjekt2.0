@@ -19,8 +19,11 @@ public class Customers {
 
         int count = 0;
 
-        // TODO
-
+        for (int i = 0; i < customers.length; i++){
+            if (customers[i] != null){
+                count++;
+            }
+        }
         return count;
     }
 
