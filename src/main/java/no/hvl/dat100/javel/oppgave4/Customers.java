@@ -57,6 +57,7 @@ public class Customers {
             if (customers[i] == null) {
                 customers[i] = c;
                 inserted = true;
+                break;
             }
         }
 
@@ -69,7 +70,13 @@ public class Customers {
         boolean deleted = false;
         Customer c = null;
 
-        // TODO
+        for (int i = 0; i < customers.length; i++) {
+            if (customers[i] != null && customer_id == customers[i].getCustomer_id()) {
+                deleted = true;
+                customers[i] = c;
+                break;
+            }
+        }
 
         return c;
     }
