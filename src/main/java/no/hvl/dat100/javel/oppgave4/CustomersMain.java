@@ -28,7 +28,14 @@ public class CustomersMain {
         int antall = nyKundeTabell.countNonNull();
         System.out.println("Antall kunder: " + antall);
 
+        //System.out.print(customers.getCustomers());
 
+        Customer[] nyTabell = nyKundeTabell.getCustomers();
+
+
+        for (Customer customer : nyTabell ) {
+        System.out.println(customer.getName());
+        }
 
     }
 }

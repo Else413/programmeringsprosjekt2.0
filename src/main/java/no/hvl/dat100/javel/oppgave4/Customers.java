@@ -86,7 +86,15 @@ public class Customers {
 
         Customer[] customers = null;
 
-        // TODO
+        customers = new Customer[countNonNull()];
+
+        int i = 0;
+        for (Customer customer : this.customers) {
+            if (customer != null) {
+                customers[i] = customer;
+                i++;
+            }
+        }
 
         return customers;
     }
