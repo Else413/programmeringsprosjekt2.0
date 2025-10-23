@@ -54,8 +54,8 @@ public class Customers {
         boolean inserted = false;
 
         for (int i = 0; i < customers.length; i++) {
-            if (customers[i] == null) { // fant ledig plass
-                customers[i] = c; // sett inn objektet
+            if (customers[i] == null) {
+                customers[i] = c;
                 inserted = true;
             }
         }
