@@ -13,12 +13,12 @@ public class InvoiceMain {
         System.out.println("==============");
         System.out.println();
 
-        /*
-        TODO
 
-         Write code that uses the methods implemented in the Invoice-classes
+        Customer k1 = new Customer ("Ethan Hunt", "ethan@email.com", 1005, PowerAgreementType.POWERSUPPORT);
+        Customer k2 = new Customer ("Bob Johnson", "bob@example.com", 1003, PowerAgreementType.NORGESPRICE);
 
-        */
+        Invoice faktura = new Invoice(k1, "september", CustomerPowerUsageData.usage_month_customer1, MonthPowerData.powerprices_month);
+        faktura.printInvoice();
 
     }
 }

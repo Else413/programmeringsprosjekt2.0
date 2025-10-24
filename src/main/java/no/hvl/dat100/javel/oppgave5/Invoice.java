@@ -43,14 +43,23 @@ public class Invoice {
         case POWERSUPPORT:
         amount = MonthlyPower.computeSpotPrice(usage, prices);
         break;
-        
+
         }
+
+        System.out.print("Amount: " + amount);
 
     }
 
     public void printInvoice() {
 
-        // TODO
+        System.out.println("Customer number " + c.getCustomer_id());
+        System.out.println("Name " + c.getName());
+        System.out.println("Email " + c.getEmail());
+        System.out.println("Agreement " + c.getAgreement());
+        System.out.println();
+        System.out.println("Month: " + month);
+        System.out.println("Usage: " + MonthlyPower.computePowerUsage(usage));
+        computeAmount();
 
     }
 }
